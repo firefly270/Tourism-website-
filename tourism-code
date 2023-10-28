@@ -1,0 +1,364 @@
+HTML:
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS styles if needed */
+    </style>
+</head>
+
+<body>
+    <div id="section1">
+        <div class="bg-container_pg1 d-flex flex-column justify-content-end">
+            <div class="tourism-card_pg1">
+                <h1 class="main-heading_pg1 text-white">TOURISM</h1>
+                <p class="paragraph_pg1 text-white">Plan your trip</p>
+                <button class="btn btn-dark" onclick="display('section2')">Get Started</button>
+            </div>
+        </div>
+    </div>
+    <div id="section2">
+        <div class="background_container_pg2">
+            <h1 class="favorite_places_pg2">Favorite Places</h1>
+            <div class="favorite_places_card_pg2 d-flex flex-row" onclick="display('section3')">
+                <div>
+                    <h1 class="favorite_places_card_heading_pg2">Taj Mahal</h1>
+                    <p class="p_pg2">
+                        The Taj Mahal, a UNESCO World Heritage Site, is an architectural marvel in Agra.
+                    </p>
+                </div>
+                <div class="d-flex flex-row justify-content-end"><img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-img.png" class="tajmahal_pg2"></div>
+            </div>
+            <div class="favorite_places_card_pg2 d-flex flex-row" onclick="display('section4')">
+                <div>
+                    <h1 class="favorite_places_card_heading_pg2">Golden Temple</h1>
+                    <p class="p_pg2">
+                        Golden Temple, a revered Sikh shrine, stands as a spiritual beacon in Amritsar.
+                    </p>
+                </div>
+                <div class="justify-content-end"><img src="https://wallpapercave.com/wp/wp3481210.jpg" class="tajmahal_pg2"></div>
+            </div>
+            <div class="favorite_places_card_pg2 d-flex flex-row" onclick="display('section5')">
+                <div>
+                    <h1 class="favorite_places_card_heading_pg2">Mysore Palace</h1>
+                    <p class="p_pg2">
+                        Mysore Palace, a cultural gem, is a splendid architectural wonder in Mysore.
+                    </p>
+                </div>
+                <div><img src="https://wallpapercave.com/wp/wp4727335.jpg" class="tajmahal_pg2"></div>
+            </div>
+            <div class="d-flex flex-row justify-content-end">
+                <button class="button_pg2 btn btn-dark" onclick="display('section1')">
+                    Go Back
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="section3">
+        <div class="bgcontainer_tm">
+            <h1 class="heading_tm"> Detailed View </h1>
+            <div class="card-container_tm">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c1-img.png" class="d-block w-100 picture-shape_tm" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c2-img.png" class="d-block w-100 picture-shape_tm" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c3-img.png" class="d-block w-100 picture-shape_tm" alt="...">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleAutoplaying" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleAutoplaying" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div>
+                    <h1 class="heading_tajmahal_tm">
+                        Taj Mahal
+                    </h1>
+                    <p class="paragrph_tm p_tm">
+                        The <b>Taj Mahal</b>, an enchanting marvel situated in the <b>city of Agra</b>, India, is a testament to eternal love and architectural brilliance.
+                        Constructed by Emperor <b>Shah Jahan in the 17th century as a mausoleum for his beloved wife</b>.
+                    </p>
+                    <ul class="p_gt">
+                        <li> Agra Fort </li>
+                        <li> Fatehpur Sikri </li>
+                        <li> Itmad-ud-Daulah's Tomb </li>
+                        <li> Mehtab Bagh</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex flex-row justify-content-end">
+                <button class="button_tm btn btn-dark " onclick="display('section2')">
+                    Go Back
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="section4">
+        <div class="bgcontainer_tm">
+            <h1 class="heading_tm"> Detailed View </h1>
+            <div class="card-container_tm">
+                <div id="carouselExampleAutoplaying2" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/goldentemple1-img.png" class="d-block w-100 picture-shape_tm" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/goldentemple2-img.png" class="d-block w-100 picture-shape_tm" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/goldentemple3-img.png" class="d-block w-100 picture-shape_tm" alt="...">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleAutoplaying2" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleAutoplaying2" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div>
+                    <h1 class="heading_tajmahal_tm">
+                        Golden Temple
+                    </h1>
+                    <p class="paragrph_tm p_gt">
+                        The Golden Temple, also known as Harmandir Sahib is a gurdwara
+                        located in the city of Amritsar, Punjab, India. There are many
+                        places to visit Near Golden Temple like Jallianwala Bagh, Wagah Border, Harike Wetland, Bathinda Fort.
+                    </p>
+                    <ul class="p_gt">
+                        <li> Jallianwala Bagh </li>
+                        <li> Wagah Border </li>
+                        <li> Harike Wetland </li>
+                        <li> Bathinda Fort</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex flex-row justify-content-end">
+                <button class="button_tm btn btn-dark " onclick="display('section2')">
+                    Go Back
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="section5">
+        <div class="bgcontainer_tm">
+            <h1 class="heading_tm"> Detailed View </h1>
+            <div class="card-container_tm">
+                <div id="carouselExampleAutoplaying3" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/mysore-palace1-img.png" class="d-block w-100 picture-shape_tm" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/mysore-palace2-img.png" class="d-block w-100 picture-shape_tm" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/mysore-palace3-img.png" class="d-block w-100 picture-shape_tm" alt="...">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleAutoplaying3" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleAutoplaying3" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div>
+                    <h1 class="heading_tajmahal_tm">
+                        Mysore palace
+                    </h1>
+                    <p class="paragrph_tm p_gt">
+                        Mysore Palace, also called Amba Vilas Palace,
+                        is one of the most magnificent and largest palaces in India.
+                        Situated in the southern state of Karnataka,
+                        it used to be the official residence of the Wodeyar Dynasty,
+                        the rulers of Mysore from 1399 to 1950.
+                    </p>
+                    <ul class="p_gt">
+                        <li> Chamundi Hill </li>
+                        <li> Brindavan Gardens </li>
+                        <li> St. Philomena's Church </li>
+                        <li> Karanji Lake</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex flex-row justify-content-end">
+                <button class="button_tm btn btn-dark " onclick="display('section2')">
+                    Go Back
+                </button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+    <script>
+        function display(section) {
+            document.getElementById(section).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+
+</html>
+
+CSS:
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.bg-container_pg1 {
+    background-image: url("https://w.wallhaven.cc/full/57/wallhaven-57wkz9.jpg");
+    height: 100vh;
+    background-color: black;
+    background-size: cover;
+}
+
+.tourism-card_pg1 {
+    height: 40vh;
+    text-align: center;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.paragraph_pg1 {
+    color: white;
+    font-weight: bold;
+}
+
+.main-heading_pg1 {
+    color: white;
+    font-family: Times New Roman;
+    font-weight: bold;
+    font-size: 65px;
+}
+
+.button_pg1 {
+    border-width: 0px;
+    border-radius: 25px;
+    background-color: #4681f4;
+    padding: 10px;
+    color: white;
+}
+
+.background_container_pg2 {
+    background-image: url('https://w.wallhaven.cc/full/57/wallhaven-57wkz9.jpg');
+    height: 130vh;
+    background-size: cover;
+}
+
+.favorite_places_pg2 {
+    color: white;
+    text-align: justify;
+    font-family: "Times New Roman";
+    font-size: 30px;
+    padding: 20px;
+}
+
+.favorite_places_card_pg2 {
+    height: 33vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    margin: 20px 15px;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.favorite_places_card_heading_pg2 {
+    color: white;
+    font-family: "Times New Roman";
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.tajmahal_pg2 {
+    border-radius: 20px;
+    padding: 2px;
+    margin: 10px 20px;
+    height: 190px;
+    width: 150px;
+}
+
+.button_pg2 {
+    margin: 10px 25px;
+}
+
+.p_pg2 {
+    color: white;
+}
+
+.bgcontainer_tm {
+    background-image: url('https://w.wallhaven.cc/full/57/wallhaven-57wkz9.jpg');
+    height: 110vh;
+    background-size: cover;
+}
+
+.heading_tm {
+    font-family: Times New Roman;
+    padding: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.card-container_tm {
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 25px;
+    border-radius: 20px;
+    background-size: cover;
+    justify-content: space-between;
+}
+
+.picture-shape_tm {
+    border-radius: 25px;
+    padding: 5px;
+    height: 30vh;
+}
+
+.heading_tajmahal_tm {
+    padding: 0px;
+    color: white;
+    margin: 5px 10px;
+    font-family: Times New Roman;
+    justify-content: space-between;
+
+}
+
+.paragrph_tm {
+    padding: 15px;
+    justify-content: space-between;
+    text-align: justify;
+    background-size: cover;
+    border-radius: 25px;
+
+}
+
+.button_tm {
+    margin: 10px 25px;
+}
+
+.p_tm {
+    color: white;
+}
+
+.p_gt {
+    color: white;
+}
